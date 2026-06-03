@@ -1,12 +1,5 @@
-const reverseString = function(message) {
-
-  let reversedMessage = "";
-
-  for (let i = message.length - 1; i >= 0; i--) {
-    reversedMessage += message[i];
-  }
-
-  return reversedMessage;
+const removeFromArray = function(numbers, ...removeNumbers) {
+  return numbers.filter((value) => !removeNumbers.includes(value));
 };
 
-console.log(reverseString("hola"));
+console.log(removeFromArray([1, 2, 3], 1));
