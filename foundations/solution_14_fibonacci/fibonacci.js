@@ -12,7 +12,7 @@ const fibonacci = function(index) {
   let fiboActual = 1;
   let fiboPrevious = 1;
 
-  for (let i = 2; i <= indexValue; i++) {
+  for (let i = 2; i < indexValue; i++) {
     let sum = fiboActual + fiboPrevious;
     fiboPrevious = fiboActual;
     fiboActual = sum;
